@@ -76,7 +76,7 @@ In a browser on your machine you can test the local Azure Function by visiting:
 
 az group create --name [[YOUR Function App name]]  --location westus2
 az storage account create --name [[Your Storage Account Name]] -l westus2 --sku Standard_LRS -g [[YOUR Function App name]]
-az functionapp create --name [[YOUR Function App name]] -g [[YOUR Function App name]] --consumption-plan-location westus2 --storage-account [[Your Storage Account Name]] --runtime python --runtime-version 3.7 --functions-version 3 --disable-app-insights 
+az functionapp create --name [[YOUR Function App name]] -g [[YOUR Function App name]] --consumption-plan-location westus2 --storage-account [[Your Storage Account Name]] --runtime python --runtime-version 3.7 --functions-version 3 --disable-app-insights --os-type Linux
 ```
 2. Publish to Azure
 
